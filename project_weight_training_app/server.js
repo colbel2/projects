@@ -9,13 +9,13 @@ app.use(express.urlencoded({extended:true}))
 app.use(cors())
 
 //require makes it where all the code from the file u are requiring goes on this line
-// require("./server/config/config")
+require("./server/config/config")
 
 // //route for hello world for testing purposes
 // app.get("/api/hello", (req, res)=>{
 //     res.json({msg: "Hello World!"})
 // } )
 
-// require('./server/routes/routes')(app)
+require('./server/routes/routes')(app)
 
 app.listen(port, () => console.log(`Listening on port: ${port}`));
