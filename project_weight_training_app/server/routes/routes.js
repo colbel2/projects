@@ -3,10 +3,10 @@ const UserController = require("../controllers/UserController")
 module.exports = app => {
     //admin routes for viwing all users in database. Can delete and edit user accounts.
     app.get("/api/users", UserController.getAllUsers)
-
-    app.post("/api/users/register", UserController.register)
-
-
+    app.post("/api/users/register", UserController.register )
+    app.post("/api/users/login", UserController.login)
+    app.get("/api/users/getloggedinuser", UserController.getLoggedInUser)
+    app.get("/api/users/logout", UserController.logout)
 
 
 
