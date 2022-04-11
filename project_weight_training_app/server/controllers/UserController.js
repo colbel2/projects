@@ -4,19 +4,49 @@ const User = require('../models/model');
 //     res.json({msg: "hello mongoose modularized!!"})
 // }
 
-module.exports.getAllUsers = (req, res) => {
-    console.log("trying to find all users saved in system")
-    User.find()
-        .then(allUsers  => {
-            res.json({results: allUsers})
-        })
-        .catch(err => res.json({message: "Something went wrong", error: err}))
+// module.exports.getAllUsers = (req, res) => {
+//     console.log("trying to find all users saved in system")
+//     User.find()
+//         .then(allUsers => {
+//             res.json({ results: allUsers })
+//         })
+//         .catch(err => res.json({ message: "Something went wrong", error: err }))
+// }
+
+// register = (req, res) => {
+//     User.create(req.body)
+//         .then(user => {
+//             res.json({ msg: "success!", user: user });
+//         })
+//         .catch(err => res.json(err));
+// }
+
+
+class UserController {
+    //admin controller features for getting all users
+    getAllUsers = (req, res) => {
+        User.find()
+            .then(allUsers => {
+                res.json({ results: allUsers })
+            })
+            .catch(err => {
+                res.json({ error: err })
+            })
+    }
+
+
+
+    register = (req, res) => {
+        User.create(req.body)
+            .then(user => {
+                res.json({ msg: "success!", user: user });
+            })
+            .catch(err => res.json(err));
+    }
 }
 
 
-
-
-
+module.exports = new UserController();
 
 
 
@@ -45,14 +75,14 @@ module.exports.getAllUsers = (req, res) => {
 //     console.log("trying to create new ninja")
 //     console.log("REQ.BODY---->", req.body)
 //     Ninja.create(req.body)
-//         .then(newlyCreatedNinja => 
+//         .then(newlyCreatedNinja =>
 //             res.json({results: newlyCreatedNinja}))
 //         .catch(err => res.json({message: "Something went wrong", error: err}))
 // }
 
 // module.exports.updateNinja = (req,res) => {
 //     Ninja.findByIdAndUpdate(
-//         {_id: req.params.id}, 
+//         {_id: req.params.id},
 //         req.body,
 //         {new: true, runValidators: true})
 //         .then(updatedNinja => {

@@ -4,6 +4,8 @@ module.exports = app => {
     //admin routes for viwing all users in database. Can delete and edit user accounts.
     app.get("/api/users", UserController.getAllUsers)
 
+    app.post("/api/users/register", UserController.register)
+
 
 
 
