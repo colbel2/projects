@@ -9,7 +9,7 @@ const RegistrationForm = () => {
     let [lastName, setLastName] = useState("");
     let [email, setEmail] = useState("");
     let [password, setPassword] = useState("");
-    let [confirm, setConfirm] = useState("");
+    let [confirmPassword, setConfirmPassword] = useState("");
 
     let [formErrors, setFormErrors] = useState({})
 
@@ -19,7 +19,7 @@ const RegistrationForm = () => {
     const register = (e) => {
         e.preventDefault();
         //objectify the info 
-        let formInfo = { firstName, lastName, email, password, confirm };
+        let formInfo = { firstName, lastName, email, password, confirmPassword };
         axios.post("http://localhost:8000/api/users/register", formInfo, { withCredentials: true })
             .then(res => {
                 console.log("res after registering", res)
@@ -66,7 +66,7 @@ const RegistrationForm = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="">Confirm Password</label>
-                    <input type="password" name="confirmPassword" id="" className='form-control' onChange={(e) => setConfirm(e.target.value)} />
+                    <input type="password" name="confirmPassword" id="" className='form-control' onChange={(e) => setConfirmPassword(e.target.value)} />
                     <p className="text-danger">{formErrors.confirmPassword?.message}</p>
 
                 </div>
