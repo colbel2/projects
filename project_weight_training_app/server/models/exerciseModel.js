@@ -24,6 +24,9 @@ const ExerciseSchema = new mongoose.Schema({
     exerciseRep: {
         type: Array,
         required: [true, "Atleast 1 rep is required to log exercise"]
+    },
+    physiqueUpdatePicture: {
+        type: String
     }
 },
     { timestamps: true } //generates created at and updated at automatically

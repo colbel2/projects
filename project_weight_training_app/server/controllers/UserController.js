@@ -1,18 +1,7 @@
 const User = require('../models/model');
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-// module.exports.sayHello = (req,res)=>{
-//     res.json({msg: "hello mongoose modularized!!"})
-// }
 
-// module.exports.getAllUsers = (req, res) => {
-//     console.log("trying to find all users saved in system")
-//     User.find()
-//         .then(allUsers => {
-//             res.json({ results: allUsers })
-//         })
-//         .catch(err => res.json({ message: "Something went wrong", error: err }))
-// }
 class UserController {
     //admin controller features for getting all users
     getAllUsers = (req, res) => {
@@ -24,44 +13,6 @@ class UserController {
                 res.json({ error: err })
             })
     }
-
-
-
-    // register = (req, res) => {
-    //     User.create(req.body)
-    //         .then(user => {
-    //             res.json({ msg: "success!", user: user });
-    //         })
-    //         .catch(err => res.json(err));
-    // }
-
-    //REPLACED register above with register below
-
-    // register = (req, res) => {
-    //     User.find({ email: req.body.email })
-    //         .then(usersWithExistingEmail => {
-    //             console.log("response when finding a user with an already existing email", usersWithExistingEmail)
-    //             if (usersWithExistingEmail.length === 0) {
-
-    //             }
-    //         })
-    //         .catch(err => console.log("ERROR:", err))
-
-
-    //     User.create(req.body)
-    //         .then(user => {
-    //             const userToken = jwt.sign({
-    //                 id: user._id
-    //             }, process.env.SECRET_KEY);
-
-    //             res
-    //                 .cookie("usertoken", userToken, process.env.SECRET_KEY, {
-    //                     httpOnly: true
-    //                 })
-    //                 .json({ msg: "success!", user: user });
-    //         })
-    //         .catch(err => res.json(err));
-    // }
 
     register = (req, res) => {
         User.find({ email: req.body.email })
@@ -162,5 +113,13 @@ class UserController {
     }
 
 }
+
+
+
+
+
+
+
+
 
 module.exports = new UserController();

@@ -12,33 +12,7 @@ module.exports = app => {
 
     app.get("/api/exercises", ExerciseController.getAllExercises)
     app.post("/api/exercises/create", ExerciseController.createExercise)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // app.get("/api/hello", NinjaController.sayHello)
-
-    // app.get("/api/allNinjas", NinjaController.findAll)
-
-    // app.get("/api/oneNinja/:id", NinjaController.findOne)
-
-    // app.post("/api/create/ninja", NinjaController.createNewNinja)
-
-    // app.put("/api/update/:id", NinjaController.updateNinja)
-
-    // app.delete("/api/ninja/:id", NinjaController.deleteNinja)
-
-    // app.get("/api/ninjas/random", NinjaController.findRandomNinja)
+    app.get("/api/exercises/:id", ExerciseController.findOneExercise)
+    app.put("/api/exercises/:id", ExerciseController.updateExercise)
+    app.delete("/api/exercises/:id", ExerciseController.deleteExercise)
 }
