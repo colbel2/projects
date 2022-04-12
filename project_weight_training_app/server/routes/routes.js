@@ -1,5 +1,5 @@
 const UserController = require("../controllers/UserController")
-
+const ExerciseController = require("../controllers/ExerciseController")
 module.exports = app => {
     //admin routes for viwing all users in database. Can delete and edit user accounts.
     app.get("/api/users", UserController.getAllUsers)
@@ -10,6 +10,8 @@ module.exports = app => {
 
     app.delete("/api/users/:id", UserController.deleteUser)
 
+    app.get("/api/exercises", ExerciseController.getAllExercises)
+    app.post("/api/exercises/create", ExerciseController.createExercise)
 
 
 

@@ -26,6 +26,25 @@ const UserSchema = new mongoose.Schema({
         required: [true, "Password is Required!"],
         minlength: [4, 'Password must be atleast 4 characters']
     },
+    date: {
+        type: Date,
+        required: [true, "Workout date is required"]
+    },
+    exerciseName: {
+        type: String,
+        required: [true, "Exercise Name is required"]
+    },
+    exerciseSet: {
+        type: Number,
+        required: [true, "Atleast 1 set is required to log exercise"]
+    },
+    exerciseWeight: {
+        type: Number
+    },
+    exerciseRep: {
+        type: Number,
+        required: [true, "Atleast 1 rep is required to log exercise"]
+    }
 },
     { timestamps: true } //generates created at and updated at automatically
 );
@@ -50,6 +69,12 @@ UserSchema.pre('save', function (next) {
             next();
         });
 });
+
+
+
+
+
+
 
 
 const User = mongoose.model('User', UserSchema);
