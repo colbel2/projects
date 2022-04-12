@@ -11,7 +11,7 @@ module.exports = app => {
     app.delete("/api/users/:id", UserController.deleteUser)
 
     app.get("/api/exercises", ExerciseController.getAllExercises)
-    app.post("/api/exercises/create", ExerciseController.createExercise)
+    app.post("/api/exercises", ExerciseController.createExercise)
     app.get("/api/exercises/:id", ExerciseController.findOneExercise)
     app.put("/api/exercises/:id", ExerciseController.updateExercise)
     app.delete("/api/exercises/:id", ExerciseController.deleteExercise)

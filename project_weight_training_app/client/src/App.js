@@ -2,6 +2,7 @@
 import './App.css';
 import SignIn from './components/SignIn';
 import Dashboard from './components/Dashboard';
+import AddWorkout from './components/AddWorkout';
 import {
   BrowserRouter,
   Switch,
@@ -14,12 +15,19 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Switch>
+          
           <Route exact path = "/">
             <SignIn></SignIn>
           </Route>
+          
           <Route exact path = "/dashboard">
             <Dashboard></Dashboard>
           </Route>
+
+          <Route exact path = "/addWorkout">
+            <AddWorkout></AddWorkout>
+          </Route>
+
         </Switch>
       </div>
     </BrowserRouter>
