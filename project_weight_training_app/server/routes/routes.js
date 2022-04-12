@@ -8,6 +8,7 @@ module.exports = app => {
     app.get("/api/users/getloggedinuser", UserController.getLoggedInUser)
     app.get("/api/users/logout", UserController.logout)
 
+    app.delete("/api/users/:id", UserController.deleteUser)
 
 
 

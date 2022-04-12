@@ -1,5 +1,5 @@
 const User = require('../models/model');
-const jwt = require ("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 // module.exports.sayHello = (req,res)=>{
 //     res.json({msg: "hello mongoose modularized!!"})
@@ -87,20 +87,28 @@ class UserController {
         res.sendStatus(200);
     }
 
-    getLoggedInUser = (req,res)=>{
+    getLoggedInUser = (req, res) => {
         //use the info stored in the cookie to get the id of the logged in user and query the db to find a user with that id, and return with info about the logged in user
-        const decodedJWT = jwt.decode(req.cookies.usertoken, {complete:true})
+        const decodedJWT = jwt.decode(req.cookies.usertoken, { complete: true })
         // decodedJWT.payload.id
-        User.findOne({_id: decodedJWT.payload.id })
-            .then(foundUser=>{
-                res.json({results: foundUser})
+        User.findOne({ _id: decodedJWT.payload.id })
+            .then(foundUser => {
+                res.json({ results: foundUser })
             })
-            .catch(err=>{
+            .catch(err => {
                 res.json(err)
             })
     }
 
+    deleteUser = (req, res) => {
+        User.findByIdAndDelete({ _id: req.params.id })
+            .then(deletedUser => {
 
+
+                res.json({ results: deletedUser })
+            })
+            .catch(err => res.json({ message: "Something went wrong", error: err }))
+    }
 
 }
 
