@@ -4,6 +4,8 @@ import { useHistory } from "react-router-dom";
 
 const AddWorkout = (props) => {
 
+
+    //state variable for each info collected from form
     let [date, setDate] = useState(Date)
     let [exerciseName, setExerciseName] = useState([])
     let [exerciseSet, setExerciseSet] = useState([])
@@ -32,7 +34,7 @@ const AddWorkout = (props) => {
                     props.setNewExerciseAdded(!props.newExerciseAdded)
 
                     //if the form was in separate route than all exercises component, then you can redirect to "/" after form submits using history.push("/")
-                    history.push("/")
+                    history.push("/dashboard")
                 }
             })
             .catch(err=>console.log("error in submitting post request",err))  

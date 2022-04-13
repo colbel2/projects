@@ -43,7 +43,7 @@ const Dashboard = (props) => {
                 setAllExercises(res.data.results)
             })
             .catch(err => console.log("ERROR", err))
-    },  props.newExerciseAdded)
+    },  [props.newExerciseAdded])
 
 
 
@@ -53,6 +53,15 @@ const Dashboard = (props) => {
         <div>
             <h1>Welcome {loggedInUser.firstName}, you're in the dashboard! Congrats on being a registered user!</h1>
             <button onClick = {logout} className="btn btn-info">Log Out</button>
+            {allExercises.map((exerciseObj, i)=> {
+                return(
+                    <div key={i} style={{ border: "1px solid black" }}>
+                        <h4>{exerciseObj.exerciseName} {exerciseObj.exerciseWeight}</h4>
+                        {/* <p>Number of Belts: {ninjaObj.numBelts}</p> */}
+                        <p>ID: {exerciseObj._id}</p>
+                        </div>
+                )
+            })}
         </div>
     );
 };
