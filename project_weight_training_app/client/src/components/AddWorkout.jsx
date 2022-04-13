@@ -32,7 +32,7 @@ const AddWorkout = (props) => {
                     props.setNewExerciseAdded(!props.newExerciseAdded)
 
                     //if the form was in separate route than all exercises component, then you can redirect to "/" after form submits using history.push("/")
-                    // history.push("/")
+                    history.push("/")
                 }
             })
             .catch(err=>console.log("error in submitting post request",err))  

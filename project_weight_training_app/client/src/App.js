@@ -1,4 +1,3 @@
-
 import './App.css';
 import SignIn from './components/SignIn';
 import Dashboard from './components/Dashboard';
@@ -9,8 +8,10 @@ import {
   Route,
   Link 
 } from "react-router-dom";
+import { useState } from 'react';
 
 function App() {
+  let [newExerciseAdded, setNewExerciseAdded] = useState(false);
   return (
     <BrowserRouter>
       <div className="App">
@@ -21,11 +22,11 @@ function App() {
           </Route>
           
           <Route exact path = "/dashboard">
-            <Dashboard></Dashboard>
+            <Dashboard newExerciseAdded={newExerciseAdded}></Dashboard>
           </Route>
 
           <Route exact path = "/addWorkout">
-            <AddWorkout></AddWorkout>
+            <AddWorkout newExerciseAdded={newExerciseAdded} setNewExerciseAdded={setNewExerciseAdded}></AddWorkout>
           </Route>
 
         </Switch>

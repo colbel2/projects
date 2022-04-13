@@ -3,11 +3,13 @@ import axios from 'axios';
 
 import { useHistory } from "react-router-dom";
 
-const Dashboard = () => {
+const Dashboard = (props) => {
 
     const history = useHistory();
 
     let [loggedInUser, setLoggedInUser] = useState({})
+    let [allExercises, setAllExercises] = useState([])
+
     useEffect(()=>{
         axios.get("http://localhost:8000/api/users/getloggedinuser", {withCredentials:true})
             .then(res=>{
@@ -34,6 +36,19 @@ const Dashboard = () => {
                 console.log("errrr logging out", err)
             })
     }
+    useEffect(() => {
+        axios.get("http://localhost:8000/api/exercises")
+            .then(res => {
+                console.log("response when getting all exercises", res)
+                setAllExercises(res.data.results)
+            })
+            .catch(err => console.log("ERROR", err))
+    },  props.newExerciseAdded)
+
+
+
+
+
     return (
         <div>
             <h1>Welcome {loggedInUser.firstName}, you're in the dashboard! Congrats on being a registered user!</h1>

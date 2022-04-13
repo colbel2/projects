@@ -40,9 +40,9 @@ module.exports.updateExercise = (req, res) => {
     console.log("trying to update an exercise!")
 
     Exercise.findOneAndUpdate(
-        { _id: req.params.id }, //which ninja to update by _id
+        { _id: req.params.id }, 
         req.body, //form info
-        { new: true, runValidators: true } //return back teh newly updated ninja info
+        { new: true, runValidators: true } //
     )
         .then(updatedExercise => {
             res.json({ results: updatedExercise })
