@@ -6,19 +6,21 @@ const AddWorkout = (props) => {
 
 
     //state variable for each info collected from form
-    let [date, setDate] = useState(Date)
+    // let [date, setDate] = useState(Date)
     let [exerciseName, setExerciseName] = useState([])
-    let [exerciseSet, setExerciseSet] = useState([])
-    let [exerciseWeight, setExerciseWeight] = useState([])
-    let [exerciseRep, setExerciseRep] = useState([])
-    let [physiqueUpdatePicture, setPhysiqueUpdatePicture] = useState("")
+    let [workout_id, setWorkout_id] = useState({})
+    // let [exerciseSet, setExerciseSet] = useState([])
+    // let [exerciseWeight, setExerciseWeight] = useState([])
+    // let [exerciseRep, setExerciseRep] = useState([])
+    // let [physiqueUpdatePicture, setPhysiqueUpdatePicture] = useState("")
     let [formErrors, setFormErrors] = useState({})
 
     const history = useHistory();
     const createExerciseSubmitHandler = (e)=>{
         e.preventDefault();
 
-        let formInfoObj = {date, exerciseName, exerciseSet, exerciseWeight, exerciseRep, physiqueUpdatePicture};
+        // let formInfoObj = {date, exerciseName, exerciseSet, exerciseWeight, exerciseRep, physiqueUpdatePicture};
+        let formInfoObj = {exerciseName, workout_id}
 
         axios.post("http://localhost:8000/api/exercises", formInfoObj) //post request to our backend route in the routes.js file
             .then(res=>{
@@ -53,15 +55,15 @@ const AddWorkout = (props) => {
                     {/* <p className="text-danger">{formErrors.firstName? formErrors.firstName.message : ""}</p> */}
                 </div>
                 <div className="form-group">
-                    <label htmlFor="">Set 1</label>
+                    {/* <label htmlFor="">Set 1</label>
                     <input onChange = {(e)=>{setExerciseSet(e.target.value)}} type="text" name="" id="" className="form-control" />
-                    <p className="text-danger">{formErrors.exerciseSet?.message}</p>
+                    <p className="text-danger">{formErrors.exerciseSet?.message}</p> */}
 
                 </div>
                 <div className="form-group">
-                    <label htmlFor="">Exercise Weight</label>
+                    {/* <label htmlFor="">Exercise Weight</label>
                     <input onChange = {(e)=>{setExerciseWeight(e.target.value)}} type="number" name="" id="" className="form-control" />
-                    <p className="text-danger">{formErrors.exerciseWeight?.message}</p>
+                    <p className="text-danger">{formErrors.exerciseWeight?.message}</p> */}
 
                 </div>
                 <div className="form-group">

@@ -5,28 +5,14 @@ const ExerciseSchema = new mongoose.Schema({
 
 
 
-    
-    date: {
-        type: Date,
-        required: [true, "Workout date is required"]
-    },
+
     exerciseName: {
         type: Array,
         required: [true, "Exercise Name is required"]
     },
-    exerciseSet: {
-        type: Array,
-        required: [true, "Atleast 1 set is required to log exercise"]
-    },
-    exerciseWeight: {
-        type: Array
-    },
-    exerciseRep: {
-        type: Array,
-        required: [true, "Atleast 1 rep is required to log exercise"]
-    },
-    physiqueUpdatePicture: {
-        type: String
+    workout_id:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "workout"
     }
 },
     { timestamps: true } //generates created at and updated at automatically

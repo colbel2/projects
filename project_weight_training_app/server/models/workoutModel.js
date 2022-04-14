@@ -13,6 +13,9 @@ const WorkoutSchema = new mongoose.Schema({
     workoutName: {
         type: String,
         required: [true, "Exercise Name is required"]
+    },
+    physiqueUpdatePicture: {
+        type: String
     }
 },
     { timestamps: true } //generates created at and updated at automatically
