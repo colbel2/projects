@@ -52,6 +52,8 @@ const Dashboard = (props) => {
     return (
         <div>
             <h1>Welcome {loggedInUser.firstName}, you're in the dashboard! Congrats on being a registered user!</h1>
+            <a href="http://localhost:3000/addworkout" className="btn btn-info" role="button">Workout</a>
+            
             <button onClick = {logout} className="btn btn-info">Log Out</button>
             {allWorkouts.map((workoutObj, i)=> {
                 return(

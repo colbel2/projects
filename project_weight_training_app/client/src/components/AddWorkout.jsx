@@ -378,6 +378,7 @@ const AddWorkout = (props) => {
 
             {/* <div className="form-box"> */}
             <h1 className=''>Log a Workout</h1>
+            <a href="http://localhost:3000/dashboard" className="btn btn-info" role="button">Home</a>
             {/* <form onSubmit={createWorkoutSubmitHandler} action=""> */}
             <Form onSubmit={createWorkoutSubmitHandler} action="" className="d-flex justify-content-center flex-nowrap" >
                 <Row >
@@ -816,7 +817,7 @@ const AddWorkout = (props) => {
                     </Row> 
                     <Row>
                         <Form.Group>
-                        <input onChange={(e) => { diary(e.target.value) }} placeholder='Diary Entry' type="text" name="" id="" className="form-control form-control-lg"/>
+                        <input onChange={(e) => { setDiary(e.target.value) }} placeholder='Diary Entry' type="text" name="" id="" className="form-control form-control-lg"/>
                         
                         </Form.Group>
 
