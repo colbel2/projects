@@ -11,7 +11,7 @@ import {
 import { useState } from 'react';
 
 function App() {
-  let [newExerciseAdded, setNewExerciseAdded] = useState(false);
+  let [newWorkoutAdded, setNewWorkoutAdded] = useState(false);
   return (
     <BrowserRouter>
       <div className="App">
@@ -22,11 +22,11 @@ function App() {
           </Route>
           
           <Route exact path = "/dashboard">
-            <Dashboard newExerciseAdded={newExerciseAdded}></Dashboard>
+            <Dashboard newWorkoutAdded={newWorkoutAdded}></Dashboard>
           </Route>
 
           <Route exact path = "/addWorkout">
-            <AddWorkout newExerciseAdded={newExerciseAdded} setNewExerciseAdded={setNewExerciseAdded}></AddWorkout>
+            <AddWorkout newWorkoutAdded={newWorkoutAdded} setNewWorkoutAdded={setNewWorkoutAdded}></AddWorkout>
           </Route>
 
         </Switch>

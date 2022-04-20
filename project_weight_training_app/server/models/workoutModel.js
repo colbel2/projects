@@ -28,7 +28,8 @@ const WorkoutSchema = new mongoose.Schema({
 
     // EXERCISE 1
     exercise1: {
-        type: String
+        type: String,
+        required: [true, "Atleast 1 Exercise is required for a workout"]
     },
     exerciseSets1_1: {
         type: String
@@ -49,7 +50,9 @@ const WorkoutSchema = new mongoose.Schema({
         type: String
     },
     reps1_1: {
-        type: Number
+        type: Number,
+        required: [true, "Atleast 1 Rep is required for an exercise"]
+
     },
     reps1_2: {
         type: Number

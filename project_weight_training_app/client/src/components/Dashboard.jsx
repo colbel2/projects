@@ -8,7 +8,7 @@ const Dashboard = (props) => {
     const history = useHistory();
 
     let [loggedInUser, setLoggedInUser] = useState({})
-    let [allExercises, setAllExercises] = useState([])
+    let [allWorkouts, setAllWorkouts] = useState([])
 
     useEffect(()=>{
         axios.get("http://localhost:8000/api/users/getloggedinuser", {withCredentials:true})
@@ -37,13 +37,13 @@ const Dashboard = (props) => {
             })
     }
     useEffect(() => {
-        axios.get("http://localhost:8000/api/exercises")
+        axios.get("http://localhost:8000/api/workouts")
             .then(res => {
-                console.log("response when getting all exercises", res)
-                setAllExercises(res.data.results)
+                console.log("response when getting all workouts", res)
+                setAllWorkouts(res.data.results)
             })
             .catch(err => console.log("ERROR", err))
-    },  [props.newExerciseAdded])
+    },  [props.newWorkoutAdded])
 
 
 
@@ -53,12 +53,12 @@ const Dashboard = (props) => {
         <div>
             <h1>Welcome {loggedInUser.firstName}, you're in the dashboard! Congrats on being a registered user!</h1>
             <button onClick = {logout} className="btn btn-info">Log Out</button>
-            {allExercises.map((exerciseObj, i)=> {
+            {allWorkouts.map((workoutObj, i)=> {
                 return(
                     <div key={i} style={{ border: "1px solid black" }}>
-                        <h4>{exerciseObj.exerciseName} {exerciseObj.exerciseWeight}</h4>
-                        {/* <p>Number of Belts: {ninjaObj.numBelts}</p> */}
-                        <p>ID: {exerciseObj._id}</p>
+                        <h4>{workoutObj.workoutName} {workoutObj.exerciseWeight}</h4>
+                        <p>Workout Date: {workoutObj.workoutDate}</p>
+                        {/* <p>ID: {workoutObj._id}</p> */}
                         </div>
                 )
             })}
