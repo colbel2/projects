@@ -76,6 +76,47 @@ const AddWorkout = (props) => {
     let [weight6_5, setWeight6_5] = useState("")
     let [weight6_6, setWeight6_6] = useState("")
 
+    let [weight7_1, setWeight7_1] = useState("")
+    let [weight7_2, setWeight7_2] = useState("")
+    let [weight7_3, setWeight7_3] = useState("")
+    let [weight7_4, setWeight7_4] = useState("")
+    let [weight7_5, setWeight7_5] = useState("")
+    let [weight7_6, setWeight7_6] = useState("")
+
+    let [weight8_1, setWeight8_1] = useState("")
+    let [weight8_2, setWeight8_2] = useState("")
+    let [weight8_3, setWeight8_3] = useState("")
+    let [weight8_4, setWeight8_4] = useState("")
+    let [weight8_5, setWeight8_5] = useState("")
+    let [weight8_6, setWeight8_6] = useState("")
+
+    let [weight9_1, setWeight9_1] = useState("")
+    let [weight9_2, setWeight9_2] = useState("")
+    let [weight9_3, setWeight9_3] = useState("")
+    let [weight9_4, setWeight9_4] = useState("")
+    let [weight9_5, setWeight9_5] = useState("")
+    let [weight9_6, setWeight9_6] = useState("")
+
+    let [weight10_1, setWeight10_1] = useState("")
+    let [weight10_2, setWeight10_2] = useState("")
+    let [weight10_3, setWeight10_3] = useState("")
+    let [weight10_4, setWeight10_4] = useState("")
+    let [weight10_5, setWeight10_5] = useState("")
+    let [weight10_6, setWeight10_6] = useState("")
+
+    let [weight11_1, setWeight11_1] = useState("")
+    let [weight11_2, setWeight11_2] = useState("")
+    let [weight11_3, setWeight11_3] = useState("")
+    let [weight11_4, setWeight11_4] = useState("")
+    let [weight11_5, setWeight11_5] = useState("")
+    let [weight11_6, setWeight11_6] = useState("")
+
+    let [weight12_1, setWeight12_1] = useState("")
+    let [weight12_2, setWeight12_2] = useState("")
+    let [weight12_3, setWeight12_3] = useState("")
+    let [weight12_4, setWeight12_4] = useState("")
+    let [weight12_5, setWeight12_5] = useState("")
+    let [weight12_6, setWeight12_6] = useState("")
 
     let [reps1_1, setReps1_1] = useState(null)
     let [reps1_2, setReps1_2] = useState(null)
@@ -112,12 +153,54 @@ const AddWorkout = (props) => {
     let [reps5_5, setReps5_5] = useState(null)
     let [reps5_6, setReps5_6] = useState(null)
 
-    let [reps6_1, setReps6_1] = useState(null)
-    let [reps6_2, setReps6_2] = useState(null)
-    let [reps6_3, setReps6_3] = useState(null)
-    let [reps6_4, setReps6_4] = useState(null)
-    let [reps6_5, setReps6_5] = useState(null)
-    let [reps6_6, setReps6_6] = useState(null)
+    let [reps7_1, setReps6_1] = useState(null)
+    let [reps7_2, setReps6_2] = useState(null)
+    let [reps7_3, setReps6_3] = useState(null)
+    let [reps7_4, setReps6_4] = useState(null)
+    let [reps7_5, setReps6_5] = useState(null)
+    let [reps7_6, setReps6_6] = useState(null)
+
+    let [reps8_1, setReps7_1] = useState(null)
+    let [reps8_2, setReps7_2] = useState(null)
+    let [reps8_3, setReps7_3] = useState(null)
+    let [reps8_4, setReps7_4] = useState(null)
+    let [reps8_5, setReps7_5] = useState(null)
+    let [reps8_6, setReps7_6] = useState(null)
+
+    let [reps9_1, setReps8_1] = useState(null)
+    let [reps9_2, setReps8_2] = useState(null)
+    let [reps9_3, setReps8_3] = useState(null)
+    let [reps9_4, setReps8_4] = useState(null)
+    let [reps9_5, setReps8_5] = useState(null)
+    let [reps9_6, setReps8_6] = useState(null)
+
+    let [reps10_1, setReps9_1] = useState(null)
+    let [reps10_2, setReps9_2] = useState(null)
+    let [reps10_3, setReps9_3] = useState(null)
+    let [reps10_4, setReps9_4] = useState(null)
+    let [reps10_5, setReps9_5] = useState(null)
+    let [reps10_6, setReps9_6] = useState(null)
+
+    let [reps11_1, setReps10_1] = useState(null)
+    let [reps11_2, setReps10_2] = useState(null)
+    let [reps11_3, setReps10_3] = useState(null)
+    let [reps11_4, setReps10_4] = useState(null)
+    let [reps11_5, setReps10_5] = useState(null)
+    let [reps11_6, setReps10_6] = useState(null)
+
+    let [reps6_1, setReps11_1] = useState(null)
+    let [reps6_2, setReps11_2] = useState(null)
+    let [reps6_3, setReps11_3] = useState(null)
+    let [reps6_4, setReps11_4] = useState(null)
+    let [reps6_5, setReps11_5] = useState(null)
+    let [reps6_6, setReps11_6] = useState(null)
+
+    let [reps12_1, setReps12_1] = useState(null)
+    let [reps12_2, setReps12_2] = useState(null)
+    let [reps12_3, setReps12_3] = useState(null)
+    let [reps12_4, setReps12_4] = useState(null)
+    let [reps12_5, setReps12_5] = useState(null)
+    let [reps12_6, setReps12_6] = useState(null)
 
 
     const history = useHistory();
@@ -223,6 +306,49 @@ const AddWorkout = (props) => {
             reps6_4,
             reps6_5,
             reps6_6,
+
+            reps7_1,
+            reps7_2,
+            reps7_3,
+            reps7_4,
+            reps7_5,
+            reps7_6,
+
+            reps8_1,
+            reps8_2,
+            reps8_3,
+            reps8_4,
+            reps8_5,
+            reps8_6,
+
+            reps9_1,
+            reps9_2,
+            reps9_3,
+            reps9_4,
+            reps9_5,
+            reps9_6,
+
+            reps10_1,
+            reps10_2,
+            reps10_3,
+            reps10_4,
+            reps10_5,
+            reps10_6,
+
+            reps11_1,
+            reps11_2,
+            reps11_3,
+            reps11_4,
+            reps11_5,
+            reps11_6,
+
+            reps12_1,
+            reps12_2,
+            reps12_3,
+            reps12_4,
+            reps12_5,
+            reps12_6
+
 
         }
 
@@ -395,10 +521,313 @@ const AddWorkout = (props) => {
                             {visible && <div></div>} */}
                         </Form.Group>
                     </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise4(e.target.value) }} placeholder='Exercise 4 Name' type="text" name="" id="" className="form-control" />
+                            <p className="text-danger">{formErrors.exerciseName?.message}</p>
+                            <p className="text-danger">{formErrors.exerciseName ? formErrors.exerciseName.message : ""}</p>
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight4_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight4_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight4_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight4_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight4_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight4_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
 
 
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps4_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps4_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps4_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps4_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps4_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps4_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise5(e.target.value) }} placeholder='Exercise 5 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight5_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight5_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight5_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight5_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight5_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight5_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
 
 
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps5_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps5_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps5_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps5_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps5_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps5_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise6(e.target.value) }} placeholder='Exercise 6 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight6_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight6_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight6_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight6_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight6_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight6_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps6_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps6_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps6_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps6_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps6_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps6_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise7(e.target.value) }} placeholder='Exercise 7 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight7_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight7_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight7_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight7_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight7_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight7_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps7_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps7_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps7_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps7_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps7_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps7_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise8(e.target.value) }} placeholder='Exercise 8 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight8_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight8_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight8_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight8_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight8_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight8_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps8_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps8_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps8_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps8_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps8_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps8_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise9(e.target.value) }} placeholder='Exercise 9 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight9_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight9_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight9_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight9_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight9_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight9_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps9_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps9_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps9_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps9_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps9_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps9_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise10(e.target.value) }} placeholder='Exercise 10 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight10_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight10_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight10_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight10_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight10_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight10_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps10_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps10_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps10_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps10_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps10_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps10_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise11(e.target.value) }} placeholder='Exercise 11 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight11_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight11_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight11_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight11_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight11_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight11_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps11_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps11_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps11_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps11_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps11_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps11_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <label htmlFor="">Exercise: </label>
+                            <input onChange={(e) => { setExercise12(e.target.value) }} placeholder='Exercise 12 Name' type="text" name="" id="" className="form-control" />
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Weight</h2>
+                            <input onChange={(e) => { setWeight12_1(e.target.value) }} placeholder='Set 1 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight12_2(e.target.value) }} placeholder='Set 2 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight12_3(e.target.value) }} placeholder='Set 3 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight12_4(e.target.value) }} placeholder='Set 4 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight12_5(e.target.value) }} placeholder='Set 5 Weight' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setWeight12_6(e.target.value) }} placeholder='Set 6 Weight' type="text" name="" id="" className="form-control" />
+
+
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <h2>Reps</h2>
+                            <input onChange={(e) => { setReps12_1(e.target.value) }} placeholder='Set 1 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps12_2(e.target.value) }} placeholder='Set 2 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps12_3(e.target.value) }} placeholder='Set 3 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps12_4(e.target.value) }} placeholder='Set 4 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps12_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
+                            <input onChange={(e) => { setReps12_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
+                        </Form.Group>
+                    </Row> 
+                    <Row>
+                        <Form.Group>
+                        <input onChange={(e) => { diary(e.target.value) }} placeholder='Diary Entry' type="text" name="" id="" className="form-control form-control-lg"/>
+                        
+                        </Form.Group>
+
+                    </Row>
+                    <Row>
+                        <Form.Group as={Col}>
+                            <input type="submit" value="Submit Workout" className="btn btn-success mt-3" />
+                            {/* <button className="btn btn-primary mt-3" onClick={() => setVisible(!visible)}>Add Exercise</button>
+                            {visible && <div></div>} */}
+                        </Form.Group>
+                    </Row>
 
 
 
