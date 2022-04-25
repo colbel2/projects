@@ -264,6 +264,47 @@ const AddWorkout = (props) => {
             weight6_5,
             weight6_6,
 
+            weight7_1,
+            weight7_2,
+            weight7_3,
+            weight7_4,
+            weight7_5,
+            weight7_6,
+
+            weight8_1,
+            weight8_2,
+            weight8_3,
+            weight8_4,
+            weight8_5,
+            weight8_6,
+
+            weight9_1,
+            weight9_2,
+            weight9_3,
+            weight9_4,
+            weight9_5,
+            weight9_6,
+
+            weight10_1,
+            weight10_2,
+            weight10_3,
+            weight10_4,
+            weight10_5,
+            weight10_6,
+
+            weight11_1,
+            weight11_2,
+            weight11_3,
+            weight11_4,
+            weight11_5,
+            weight11_6,
+
+            weight12_1,
+            weight12_2,
+            weight12_3,
+            weight12_4,
+            weight12_5,
+            weight12_6,
 
             reps1_1,
             reps1_2,
@@ -377,9 +418,10 @@ const AddWorkout = (props) => {
         <div >
 
             {/* <div className="form-box"> */}
-            <h1 className=''>Log a Workout</h1>
-            <a href="http://localhost:3000/dashboard" className="btn btn-info" role="button">Home</a>
-            {/* <form onSubmit={createWorkoutSubmitHandler} action=""> */}
+            <h1 className=''>Log a Workout</h1> {/* */}
+            {/* Button to return to user dashboard */}
+            <a href="http://localhost:3000/dashboard" className="btn btn-info" role="button">Home</a> 
+            
             <Form onSubmit={createWorkoutSubmitHandler} action="" className="d-flex justify-content-center flex-nowrap" >
                 <Row >
 
@@ -814,11 +856,11 @@ const AddWorkout = (props) => {
                             <input onChange={(e) => { setReps12_5(e.target.value) }} placeholder='Set 5 Reps' type="text" name="" id="" className="form-control" />
                             <input onChange={(e) => { setReps12_6(e.target.value) }} placeholder='Set 6 Reps' type="text" name="" id="" className="form-control" />
                         </Form.Group>
-                    </Row> 
+                    </Row>
                     <Row>
                         <Form.Group>
-                        <input onChange={(e) => { setDiary(e.target.value) }} placeholder='Diary Entry' type="text" name="" id="" className="form-control form-control-lg"/>
-                        
+                            <input onChange={(e) => { setDiary(e.target.value) }} placeholder='Diary Entry' type="text" name="" id="" className="form-control form-control-lg" />
+
                         </Form.Group>
 
                     </Row>

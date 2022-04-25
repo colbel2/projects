@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 import { useHistory } from "react-router-dom";
 
@@ -60,7 +61,9 @@ const Dashboard = (props) => {
                     <div key={i} style={{ border: "1px solid black" }}>
                         <h4>{workoutObj.workoutName} {workoutObj.exerciseWeight}</h4>
                         <p>Workout Date: {workoutObj.workoutDate}</p>
-                        {/* <p>ID: {workoutObj._id}</p> */}
+                        <p>ID: {workoutObj._id}</p>
+                        <Link to={`/workout/${workoutObj._id}`} className="btn btn-info" > Details </Link>   | &nbsp;
+                        <Link to={`/workout/edit/${workoutObj._id}`} className="btn btn-warning" > Edit </Link>  | &nbsp;
                         </div>
                 )
             })}

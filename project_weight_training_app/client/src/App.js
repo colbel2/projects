@@ -2,6 +2,8 @@ import './App.css';
 import SignIn from './components/SignIn';
 import Dashboard from './components/Dashboard';
 import AddWorkout from './components/AddWorkout';
+import ViewOneWorkout from './components/ViewOneWorkout';
+import EditWorkout from './components/EditWorkout';
 import {
   BrowserRouter,
   Switch,
@@ -27,6 +29,14 @@ function App() {
 
           <Route exact path = "/addWorkout">
             <AddWorkout newWorkoutAdded={newWorkoutAdded} setNewWorkoutAdded={setNewWorkoutAdded}></AddWorkout>
+          </Route>
+
+          <Route exact path = "/workout/:id">
+            <ViewOneWorkout></ViewOneWorkout>
+          </Route>
+          
+          <Route exact path = "/workout/edit/:id">
+            <EditWorkout></EditWorkout>
           </Route>
 
         </Switch>
